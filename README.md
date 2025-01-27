@@ -1,5 +1,9 @@
 Welcome to My Personal Website Repository
-Hi there! 👋 I'm Neil Gupta, and this repository contains the code and structure for my personal website: neilg2001.github.io/neilgupta. This site serves as my online portfolio and resume, where I share my background, experiences, and interests.
+Hi there! I'm Neil Gupta ... 
+
+This repository contains the code and structure for my personal website: neilg2001.github.io/neilgupta. 
+
+This site serves as my online portfolio and resume, where I share my background, experiences, and interests.
 
 About the Website
 The website offers a glimpse into my life, career, and hobbies. It includes sections about my education, my work as a Software Engineer at PayPal, and some of the key roles and projects I’ve worked on in the past.
