@@ -13,6 +13,6 @@ I also share a bit about my personal interests, like sports, cooking, and music,
 Contact Me
 If you’d like to connect or learn more about my work, feel free to reach out!
 
-Email: nrgupta@umich.edu
+Email: neilg2001@gmail.com
 Phone: 630-880-8066
 Thanks for stopping by!
