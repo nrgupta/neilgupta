@@ -1,7 +1,7 @@
 Welcome to My Personal Website Repository
 Hi there! I'm Neil Gupta ... 
 
-This repository contains the code and structure for my personal website: neilg2001.github.io/neilgupta. 
+This repository contains the code and structure for my personal website: [neilg2001.github.io/neilgupta. ](https://neilg2001.github.io/neilgupta/)
 
 This site serves as my online portfolio and resume, where I share my background, experiences, and interests.
 
