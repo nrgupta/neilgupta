@@ -3507,10 +3507,9 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease;
 			transition: opacity 0.2s ease;
 			height: inherit;
-			left: 1.25em;
 			line-height: inherit;
-			position: absolute;
-			top: 0;
+			position: static;
+			padding-left: 1.5em;
 		}
 
 			#header h1 a {
