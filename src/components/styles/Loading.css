@@ -2,7 +2,7 @@
   position: fixed;
   width: 100vw;
   height: var(--vh);
-  /* background-image: linear-gradient(#e8a05c, #f5c896); */
+  /* background-image: linear-gradient(#6ca8f7, #bcd7fd); */
   background-color: #000;
   z-index: 999999999;
   display: flex;
@@ -70,7 +70,7 @@
   overflow: visible;
 }
 .loading-hover {
-  background-color: #d9762e;
+  background-color: #3b82f6;
   width: 250px;
   height: 120px;
   position: absolute;
@@ -272,7 +272,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #d9762e;
+  background-color: #3b82f6;
   animation: ball25 7s infinite;
   transform: translateY(10px);
   animation-timing-function: cubic-bezier(0.3, 1.18, 0.63, 1.28);

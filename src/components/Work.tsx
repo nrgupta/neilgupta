@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { config } from "../config";
-import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,13 +75,15 @@ const Work = () => {
                     <p>{project.category}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
+                <p className="work-description">{project.description}</p>
+                <h4 className="work-tools-heading">Tools and features</h4>
                 <p>{project.technologies}</p>
               </div>
               <WorkImage
                 link={project.link}
                 language={project.language}
                 alt={project.title}
+                image={project.image}
               />
             </div>
           ))}
@@ -91,9 +92,15 @@ const Work = () => {
             <div className="see-all-works">
               <h3>Want to see more?</h3>
               <p>Explore all of my projects and creations</p>
-              <Link to="/myworks" className="see-all-btn" data-cursor="disable">
+              <a
+                href={`https://github.com/${config.social.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="see-all-btn"
+                data-cursor="disable"
+              >
                 See All Works →
-              </Link>
+              </a>
             </div>
           </div>
         </div>

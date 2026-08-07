@@ -51,7 +51,7 @@ export function setCharTimeline(
     if (object.name === "screenlight") {
       object.material.transparent = true;
       object.material.opacity = 0;
-      object.material.emissive.set("#F5C896");
+      object.material.emissive.set("#BCD7FD");
       gsap.timeline({ repeat: -1, repeatRefresh: true }).to(object.material, {
         emissiveIntensity: () => intensity * 8,
         duration: () => Math.random() * 0.6,

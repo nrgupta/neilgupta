@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import { Link } from "react-router-dom";
 import "./styles/Landing.css";
 import { config } from "../config";
 
@@ -28,6 +29,9 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info">Software Engineer</div>
             </h2>
           </div>
+          <Link to="/play" className="landing-cta landing-cta-desktop" data-cursor="disable">
+            Chat With Me →
+          </Link>
           {/* Mobile photo - shows only on mobile when 3D character is hidden */}
           <div className="mobile-photo">
             <img src="/images/headshot.png" alt="Neil Gupta" />

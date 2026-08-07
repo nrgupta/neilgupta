@@ -4,7 +4,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #d9762e, #ffffff);
+  background: linear-gradient(0deg, #3b82f6, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -104,6 +104,16 @@
 
 .work-info>p {
   width: 90%;
+}
+
+.work-description {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px !important;
+}
+
+.work-tools-heading {
+  font-size: 17px !important;
 }
 
 .work-image {
@@ -311,7 +321,7 @@
 
 .see-all-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(217, 118, 46, 0.4);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
 
 /* Mobile: Stack work items vertically when GSAP pinning is disabled */

@@ -35,14 +35,22 @@ const MyWorks = () => {
           >
             <div className="myworks-card-number">0{index + 1}</div>
             <div className="myworks-card-image">
-              <div
-                className="myworks-card-image-placeholder"
-                style={{
-                  background: LANGUAGE_COLORS[project.language] ?? "#444",
-                }}
-              >
-                <span>{project.title}</span>
-              </div>
+              {project.image ? (
+                <img
+                  className="myworks-card-image-img"
+                  src={project.image}
+                  alt={project.title}
+                />
+              ) : (
+                <div
+                  className="myworks-card-image-placeholder"
+                  style={{
+                    background: LANGUAGE_COLORS[project.language] ?? "#444",
+                  }}
+                >
+                  <span>{project.title}</span>
+                </div>
+              )}
             </div>
             <div className="myworks-card-info">
               <h3>{project.title}</h3>

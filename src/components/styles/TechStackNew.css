@@ -32,8 +32,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(40, 30, 5, 0.6);
+  mix-blend-mode: multiply;
   z-index: 1;
+}
+
+.techstack-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(212, 175, 55, 0.18);
 }
 
 /* Top gradient fade - blends with Work section above */
@@ -78,7 +89,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 50px;
-  background: linear-gradient(180deg, #ffffff 0%, #d9762e 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #d4af37 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,9 +133,9 @@
 
 .techstack-item:hover {
   transform: translateY(-6px) scale(1.08);
-  background: rgba(217, 118, 46, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   border-color: var(--accentColor);
-  box-shadow: 0 8px 30px rgba(217, 118, 46, 0.25);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.25);
 }
 
 .techstack-item img {

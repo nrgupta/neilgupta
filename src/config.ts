@@ -152,56 +152,61 @@ export const config = {
         {
             id: 1,
             title: "abode",
-            category: "AI Agent",
+            category: "AI apartment hunter",
             technologies: "Python, AI Agents",
             language: "Python",
             link: "https://github.com/nrgupta/abode",
-            description: "Apartment AI agent that assists in searching, filtering, and evaluating apartment listings."
+            image: "/images/projects/abode.png",
+            description: "Automated apartment-hunting pipeline that scrapes Zillow, Redfin, and Craigslist, dedupes listings, syncs them to a Google Sheet, and emails a daily digest. Includes a Flask search UI and a swipeable mobile prototype."
         },
         {
             id: 2,
-            title: "nba-mcp-server",
-            category: "AI / MCP",
-            technologies: "Python, MCP, LLM Tooling",
+            title: "newsroom",
+            category: "Daily news digest bot",
+            technologies: "Python, GitHub Actions, NewsAPI",
             language: "Python",
-            link: "https://github.com/nrgupta/nba-mcp-server",
-            description: "Agentic NBA analysis through MCP tools, enabling LLM-powered querying and insights over NBA stats."
+            link: "https://github.com/nrgupta/newsroom",
+            image: "/images/projects/newsroom.png",
+            description: "Aggregates and dedupes recent headlines from NewsAPI and RSS feeds (NYT, Washington Post, Guardian), then pushes a condensed daily digest straight to your phone via ntfy.sh, fully automated with GitHub Actions."
         },
         {
             id: 3,
-            title: "stock-prediction",
-            category: "Machine Learning",
-            technologies: "Jupyter Notebook, Python, Machine Learning",
-            language: "Jupyter Notebook",
-            link: "https://github.com/nrgupta/stock-prediction",
-            description: "Stock price prediction model using machine learning to forecast market movements and trends."
+            title: "nba-mcp-server",
+            category: "NBA betting research agent",
+            technologies: "Python, MCP, LLM Tooling",
+            language: "Python",
+            link: "https://github.com/nrgupta/nba-mcp-server",
+            image: "/images/projects/nba-mcp-server.jpeg",
+            description: "MCP server that plugs into Claude Desktop to automate NBA betting research — pulling schedules, stats, and odds, scoring value with a custom edge formula, and auto-building parlays with a scheduled email report."
         },
         {
             id: 4,
-            title: "TurboMath",
-            category: "Web App",
-            technologies: "HTML, JavaScript, CSS",
-            language: "HTML",
-            link: "https://github.com/nrgupta/TurboMath",
-            description: "Fast-paced math practice web app with timed challenges."
+            title: "stock-prediction",
+            category: "Stock price forecasting model",
+            technologies: "Jupyter Notebook, Python, Machine Learning",
+            language: "Jupyter Notebook",
+            link: "https://github.com/nrgupta/stock-prediction",
+            image: "/images/projects/stock-prediction.png",
+            description: "Jupyter notebook that trains a model on historical stock data to predict closing prices, plotting predicted vs. actual prices to visualize accuracy."
         },
         {
             id: 5,
-            title: "SpaceShipGame",
-            category: "Game",
-            technologies: "JavaScript",
-            language: "JavaScript",
-            link: "https://github.com/nrgupta/SpaceShipGame",
-            description: "Browser-based spaceship game with gameplay mechanics and interactive controls."
+            title: "TurboMath",
+            category: "Timed math-drill game",
+            technologies: "HTML, JavaScript, CSS",
+            language: "HTML",
+            link: "https://github.com/nrgupta/TurboMath",
+            image: "/images/projects/turbomath.png",
+            description: "Timed math-drill game generating randomized addition, subtraction, multiplication, and division problems across three difficulty levels, with score tracking and a responsive layout."
         },
         {
             id: 6,
             title: "MusicSearch",
-            category: "Web App",
+            category: "Artist search web app",
             technologies: "HTML, JavaScript, iTunes API",
             language: "HTML",
             link: "https://github.com/nrgupta/MusicSearch",
-            description: "iTunes search web app that dynamically populates musicians by artist name or genre."
+            description: "Vanilla JS web app for looking up musicians by name or genre via the iTunes Search API, updating results dynamically without a page refresh."
         }
     ],
     contact: {

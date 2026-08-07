@@ -8,8 +8,8 @@
   border-radius: 50px;
   pointer-events: none;
   z-index: 99;
-  background-color: #f5c896;
-  box-shadow: 0px 0px 30px 0px rgb(217, 118, 46);
+  background-color: #bcd7fd;
+  box-shadow: 0px 0px 30px 0px rgb(59, 130, 246);
   mix-blend-mode: difference;
   transition: top 0.3s ease-out, left 0.3s ease-out, width 0.3s ease-out,
     height 0.3s ease-out;
@@ -22,6 +22,9 @@
 }
 .cursor-disable {
   --size: 0px;
+  box-shadow: none;
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
 }
 @media only screen and (min-width: 600px) {
   .cursor-main {
@@ -29,5 +32,8 @@
   }
   .cursor-disable {
     --size: 0px;
+    box-shadow: none;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
   }
 }

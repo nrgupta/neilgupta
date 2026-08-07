@@ -17,7 +17,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #d9762e, #ffffff);
+  background: linear-gradient(0deg, #3b82f6, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,10 +75,10 @@
 
 .career-info-box p {
   width: 42%;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   margin: 0;
-  line-height: 20px;
+  line-height: 24px;
   padding-top: 30px;
 }
 
@@ -139,7 +139,7 @@
   width: 3px;
   height: 100%;
   background-image: linear-gradient(to top,
-      #a3521e 20%,
+      #1e4fa3 20%,
       var(--accentColor) 50%,
       transparent 95%);
   max-height: 0%;
@@ -150,12 +150,12 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #d9762e;
+  background-color: #3b82f6;
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #e8a05c, 0px 0px 15px 8px #e8a05c,
-    0px 0px 110px 20px #f5c896;
+  box-shadow: 0px 0px 5px 2px #6ca8f7, 0px 0px 15px 8px #6ca8f7,
+    0px 0px 110px 20px #bcd7fd;
   animation: timeline 0.8s linear infinite forwards;
 }
 
@@ -166,7 +166,7 @@
   50%,
   70%,
   90% {
-    box-shadow: 0px 0px 5px 2px #e8a05c;
+    box-shadow: 0px 0px 5px 2px #6ca8f7;
   }
 
   10%,
@@ -175,19 +175,19 @@
   100%,
   64%,
   80% {
-    box-shadow: 0px 0px 5px 2px #e8a05c, 0px 0px 15px 5px #e8a05c,
-      0px 0px 110px 20px #f5c896;
+    box-shadow: 0px 0px 5px 2px #6ca8f7, 0px 0px 15px 5px #6ca8f7,
+      0px 0px 110px 20px #bcd7fd;
   }
 }
 
 @keyframes timeline2 {
   0% {
-    box-shadow: 0px 0px 5px 2px #e8a05c;
+    box-shadow: 0px 0px 5px 2px #6ca8f7;
   }
 
   100% {
-    box-shadow: 0px 0px 5px 2px #e8a05c, 0px 0px 15px 5px #e8a05c,
-      0px 0px 110px 20px #f5c896;
+    box-shadow: 0px 0px 5px 2px #6ca8f7, 0px 0px 15px 5px #6ca8f7,
+      0px 0px 110px 20px #bcd7fd;
   }
 }
 
@@ -212,7 +212,7 @@
   }
 
   .career-info-box p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .career-info-in {
@@ -289,6 +289,8 @@
     padding-left: 10%;
     box-sizing: border-box;
     text-align: left;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .career-item-right .career-role {

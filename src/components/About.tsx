@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./styles/About.css";
+import "./styles/Landing.css";
 import { config } from "../config";
 
 const CHAR_SPEED = 18;
@@ -80,6 +82,9 @@ const About = () => {
           </p>
         ))}
       </div>
+      <Link to="/play" className="landing-cta landing-cta-mobile" data-cursor="disable">
+        Chat With Me →
+      </Link>
     </div>
   );
 };
