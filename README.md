@@ -1,18 +1,99 @@
-Welcome to My Personal Website Repository
-Hi there! I'm Neil Gupta ... 
+# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
 
-This repository contains the code and structure for my personal website: [neilg2001.github.io/neilgupta. ](https://neilg2001.github.io/neilgupta/)
+[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
 
-This site serves as my online portfolio and resume, where I share my background, experiences, and interests.
+A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
 
-About the Website
-The website offers a glimpse into my life, career, and hobbies. It includes sections about my education, my work as a Software Engineer at PayPal, and some of the key roles and projects I’ve worked on in the past.
+If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
 
-I also share a bit about my personal interests, like sports, cooking, and music, as well as my involvement with organizations like Kappa Theta Pi, a professional technology fraternity at the University of Michigan.
+> Live preview: https://www.redoyanulhaque.me/
 
-Contact Me
-If you’d like to connect or learn more about my work, feel free to reach out!
+---
 
-Email: neilg2001@gmail.com
-Phone: 630-880-8066
-Thanks for stopping by!
+## ✨ Highlights
+
+- **3D / WebGL experience** powered by **Three.js**
+- Smooth animations with **GSAP**
+- Modern **React + TypeScript** codebase
+- Fast, responsive UI (desktop + mobile)
+- Designed for developers, engineers, programmers, and creators
+
+---
+
+## 🧰 Tech Stack
+
+- **React**
+- **TypeScript**
+- **Three.js / WebGL**
+- **GSAP**
+- **HTML / CSS / JavaScript**
+
+---
+
+## 🚀 Getting Started
+
+### 1) Clone
+
+```bash
+git clone https://github.com/red1-for-hek/portfolio-website.git
+cd portfolio-website
+```
+
+### 2) Install
+
+```bash
+npm install
+```
+
+### 3) Run locally
+
+```bash
+npm run dev
+```
+
+### 4) Build
+
+```bash
+npm run build
+```
+
+---
+
+## 🧩 Customize (Quick Guide)
+
+Typical things you’ll want to update:
+
+- **Your name + hero section text**
+- **Projects list**
+- **Social links** (GitHub, LinkedIn, email)
+- **SEO meta title/description**
+
+---
+
+## ⭐ Support
+
+If you found this useful:
+
+- Please **star** the repository (it helps a lot)
+- Share it with a friend who needs a portfolio template
+- Sponsor via the **Sponsor** button on GitHub (if available in your region)
+
+---
+
+## 🤝 Connect
+
+- LinkedIn: https://www.linkedin.com/in/red1-for-hek/
+
+---
+
+## 🏷️ Recommended GitHub Topics (add in repo settings)
+
+Add these topics to improve GitHub search visibility:
+
+`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+
+---
+
+## 🪪 License
+
+This project is open source and available under the **MIT License**. See [LICENSE](LICENSE).

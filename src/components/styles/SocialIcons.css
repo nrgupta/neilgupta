@@ -1,0 +1,51 @@
+.social-icons {
+  position: fixed;
+  max-width: var(--cMaxWidth);
+  width: var(--cWidth);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 62px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.social-icons a,
+.social-icons .email-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ccc;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.social-icons a:hover,
+.social-icons .email-button:hover {
+  color: #fff;
+}
+.resume-button {
+  font-size: 24px;
+}
+@media only screen and (min-width: 500px) {
+  .social-icons {
+    top: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .social-icons {
+    top: 100px;
+    gap: 24px;
+  }
+  .social-icons a,
+  .social-icons .email-button {
+    font-size: 28px;
+  }
+  .resume-button {
+    font-size: 28px;
+  }
+}

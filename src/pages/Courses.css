@@ -1,0 +1,100 @@
+.courses-page {
+  min-height: 100vh;
+  background-color: var(--backgroundColor);
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.courses-header h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  background: linear-gradient(0deg, #d9762e, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.courses-header h1 span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.courses-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.courses-section {
+  max-width: 1400px;
+  margin: 0 auto 60px;
+}
+
+.courses-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accentColor);
+  box-shadow: 0 20px 40px rgba(217, 118, 46, 0.15);
+}
+
+.course-code {
+  font-size: 13px;
+  color: var(--accentColor);
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .courses-page {
+    padding: 60px 20px;
+  }
+
+  .courses-header h1 {
+    font-size: 45px;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
