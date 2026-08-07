@@ -65,7 +65,7 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
   background: var(--bgColor, #0a0a0f);
-  padding: 4px 10px;
+  padding: 4px 10px 8px;
   border-radius: 20px;
   border: 1px solid rgba(170, 66, 255, 0.4);
   font-size: 13px;
@@ -306,6 +306,15 @@
   .career-container {
     width: calc(100% - 25px);
   }
+
+  .career-date {
+    position: static;
+    transform: none;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    order: -1;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -331,6 +340,10 @@
   .career-info-in,
   .career-info-box p {
     padding-left: 5%;
+  }
+
+  .career-date {
+    margin-left: 5%;
   }
 
   .career-section {

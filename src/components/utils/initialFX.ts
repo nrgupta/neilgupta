@@ -77,8 +77,10 @@ export function initialFX() {
   var landingText4 = new TextSplitter(".landing-h2-1", TextProps);
   var landingText5 = new TextSplitter(".landing-h2-2", TextProps);
 
-  LoopText(landingText2, landingText3);
-  LoopText(landingText4, landingText5);
+  if (window.innerWidth > 768) {
+    LoopText(landingText2, landingText3);
+    LoopText(landingText4, landingText5);
+  }
 }
 
 function LoopText(Text1: TextSplitter, Text2: TextSplitter) {
