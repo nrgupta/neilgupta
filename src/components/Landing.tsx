@@ -29,7 +29,7 @@ const Landing = ({ children }: PropsWithChildren) => {
               <div className="landing-h2-info">Software Engineer</div>
             </h2>
           </div>
-          <Link to="/play" className="landing-cta landing-cta-desktop" data-cursor="disable">
+          <Link to="/chat" className="landing-cta landing-cta-desktop" data-cursor="disable">
             Chat With Me →
           </Link>
           {/* Mobile photo - shows only on mobile when 3D character is hidden */}

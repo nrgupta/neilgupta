@@ -39,7 +39,7 @@ const App = () => {
           }
         />
         <Route
-          path="/play"
+          path="/chat"
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <Play />

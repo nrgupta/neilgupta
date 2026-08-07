@@ -82,7 +82,7 @@ const About = () => {
           </p>
         ))}
       </div>
-      <Link to="/play" className="landing-cta landing-cta-mobile" data-cursor="disable">
+      <Link to="/chat" className="landing-cta landing-cta-mobile" data-cursor="disable">
         Chat With Me →
       </Link>
     </div>
