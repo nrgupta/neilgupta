@@ -2,7 +2,7 @@
 
 Personal 3D portfolio site for Neil Gupta — Software Engineer at PayPal. Built with **React**, **TypeScript**, **Three.js**, and **GSAP**, featuring an interactive 3D scene, an AI chat that role-plays as Neil, project/course/hobby pages, and smooth scroll-driven animations.
 
-> Live: https://www.neilgupta.com/
+> Live: https://neilgupta.vercel.app/
 
 ## Features
 
