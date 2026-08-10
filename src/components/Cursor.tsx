@@ -23,8 +23,10 @@ const Cursor = () => {
       }
       requestAnimationFrame(loop);
     });
-    document.querySelectorAll("[data-cursor]").forEach((item) => {
+    const attachListeners = (item: Element) => {
       const element = item as HTMLElement;
+      if (element.dataset.cursorBound) return;
+      element.dataset.cursorBound = "true";
       element.addEventListener("mouseover", (e: MouseEvent) => {
         const target = e.currentTarget as HTMLElement;
         const rect = target.getBoundingClientRect();
@@ -45,7 +47,18 @@ const Cursor = () => {
         cursor.classList.remove("cursor-disable", "cursor-icons");
         hover = false;
       });
+    };
+
+    document.querySelectorAll("[data-cursor]").forEach(attachListeners);
+
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll("[data-cursor]").forEach(attachListeners);
     });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return <div className="cursor-main" ref={cursorRef}></div>;
