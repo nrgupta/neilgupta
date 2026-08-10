@@ -34,6 +34,19 @@ const MyWorks = () => {
             rel="noopener noreferrer"
           >
             <div className="myworks-card-number">0{index + 1}</div>
+            {project.demoLink && (
+              <span
+                className="myworks-card-demo"
+                data-cursor="disable"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open(project.demoLink, "_blank", "noopener,noreferrer");
+                }}
+              >
+                Live Demo ↗
+              </span>
+            )}
             <div className="myworks-card-image">
               {project.image ? (
                 <img

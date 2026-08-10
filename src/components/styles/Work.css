@@ -324,6 +324,25 @@
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
 }
 
+.try-it-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  background: var(--accentColor);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.try-it-btn:hover {
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+}
+
 /* Mobile: Stack work items vertically when GSAP pinning is disabled */
 @media only screen and (max-width: 768px) {
   .work-section {

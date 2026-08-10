@@ -78,6 +78,17 @@ const Work = () => {
                 <p className="work-description">{project.description}</p>
                 <h4 className="work-tools-heading">Tools and features</h4>
                 <p>{project.technologies}</p>
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="try-it-btn"
+                    data-cursor="disable"
+                  >
+                    Try it out →
+                  </a>
+                )}
               </div>
               <WorkImage
                 link={project.link}

@@ -156,6 +156,7 @@ export const config = {
             technologies: "Python, AI Agents",
             language: "Python",
             link: "https://github.com/nrgupta/abode",
+            demoLink: "https://abode.up.railway.app/",
             image: "/images/projects/abode.png",
             description: "Automated apartment-hunting pipeline that scrapes Zillow, Redfin, and Craigslist, dedupes listings, syncs them to a Google Sheet, and emails a daily digest. Includes a Flask search UI and a swipeable mobile prototype."
         },
