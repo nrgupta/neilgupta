@@ -13,9 +13,9 @@ export const config = {
     about: {
         title: "About Me",
         description: [
-            "Graduated from the University of Michigan, studying computer science and applied statistics.",
-            "Currently a Software Engineer at PayPal, working in Agentic Commerce, powering in-chat checkout on various LLM platforms.",
-            "Born and raised in the suburbs of Chicago."
+            "Born and raised in the suburbs of Illinois, currently living in Downtown Chicago.",
+            "Graduated from the University of Michigan, with degrees in computer science and applied statistics.",
+            "Currently a Software Engineer at PayPal, working in Agentic Commerce, powering in-chat checkout on various LLM platforms."
         ]
     },
     experiences: [
