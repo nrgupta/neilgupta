@@ -24,7 +24,7 @@ const SocialIcons = () => {
       </a>
       <a
         className="resume-button"
-        href="/files/RESUMEGUPTA.pdf"
+        href="/files/RESUME_GUPTA_NEIL.pdf"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Resume"
