@@ -23,30 +23,38 @@ const Cursor = () => {
       }
       requestAnimationFrame(loop);
     });
+    const applyHoverState = (element: HTMLElement, rect: DOMRect) => {
+      if (element.dataset.cursor === "icons") {
+        cursor.classList.add("cursor-icons");
+        gsap.to(cursor, { x: rect.left, y: rect.top, duration: 0.1 });
+        cursor.style.setProperty("--cursorH", `${rect.height}px`);
+        hover = true;
+      }
+      if (element.dataset.cursor === "disable") {
+        cursor.classList.add("cursor-disable");
+      }
+    };
+
     const attachListeners = (item: Element) => {
       const element = item as HTMLElement;
       if (element.dataset.cursorBound) return;
       element.dataset.cursorBound = "true";
       element.addEventListener("mouseover", (e: MouseEvent) => {
         const target = e.currentTarget as HTMLElement;
-        const rect = target.getBoundingClientRect();
-
-        if (element.dataset.cursor === "icons") {
-          cursor.classList.add("cursor-icons");
-
-          gsap.to(cursor, { x: rect.left, y: rect.top, duration: 0.1 });
-          //   cursor.style.transform = `translate(${rect.left}px,${rect.top}px)`;
-          cursor.style.setProperty("--cursorH", `${rect.height}px`);
-          hover = true;
-        }
-        if (element.dataset.cursor === "disable") {
-          cursor.classList.add("cursor-disable");
-        }
+        applyHoverState(element, target.getBoundingClientRect());
       });
       element.addEventListener("mouseout", () => {
         cursor.classList.remove("cursor-disable", "cursor-icons");
         hover = false;
       });
+
+      // The cursor may already be resting over this element when it is
+      // revealed (e.g. behind the loading screen), in which case no
+      // "mouseover" ever fires. Check immediately so the disabled/icons
+      // state applies without requiring a fresh mouse-enter.
+      if (element.matches(":hover")) {
+        applyHoverState(element, element.getBoundingClientRect());
+      }
     };
 
     document.querySelectorAll("[data-cursor]").forEach(attachListeners);
